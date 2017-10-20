@@ -15,7 +15,7 @@
 {%if input_id != "" %}
 
 <div style="background-color:aqua">
-    <h3 style="text-align:center"> {{ input }}</h3>    
+    <h3 style="text-align:left"> {{ input }}</h3>    
     {{entry}}
 </div>
 {% endif %}
@@ -30,7 +30,7 @@
 <h2 style="background-color:Yellow">Blogs details:</h2>
 
   {% for blog in blogs %}
-    <div style="background-color:darkturquoise">
+    
     <h3><a href="/blog?id={{blog.id}}" >{{ blog.title }}</a></h3>
     <p>         {{blog.blog}} </p>
    {% endfor %}
